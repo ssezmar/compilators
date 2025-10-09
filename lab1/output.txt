@@ -1,0 +1,17 @@
+СтрокаИмя лексемыКласс     Значение/Атрибут
+---------------------------------------------------------------------------
+1         int                 KEYWORD        -                             
+1         main                IDENTIFIER     id_1_5                        
+1         (                   DELIMITER      -                             
+1         )                   DELIMITER      -                             
+1         {                   DELIMITER      -                             
+1         float               KEYWORD        -                             
+1         x                   IDENTIFIER     id_1_20                       
+1         =                   OPERATOR       -                             
+1         3.14                FLOAT          3.14                          
+1         ;                   DELIMITER      -                             
+1         /* комментарий */COMMENT        comment                       
+1         return              KEYWORD        -                             
+1         0                   INTEGER        0                             
+1         ;                   DELIMITER      -                             
+1         }                   DELIMITER      -                             

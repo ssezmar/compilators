@@ -1,0 +1,20 @@
+СтрокаИмя лексемыКласс     Значение/Атрибут
+---------------------------------------------------------------------------
+1         #                   ERROR          lexical_error                 
+1         include             IDENTIFIER     id_1_2                        
+1         <                   OPERATOR       -                             
+1         iostream            IDENTIFIER     id_1_11                       
+1         >                   OPERATOR       -                             
+2         using               IDENTIFIER     id_2_1                        
+2         namespace           IDENTIFIER     id_2_7                        
+2         std                 IDENTIFIER     id_2_17                       
+2         ;                   DELIMITER      -                             
+4         int                 KEYWORD        -                             
+4         main                IDENTIFIER     id_4_5                        
+4         (                   DELIMITER      -                             
+4         )                   DELIMITER      -                             
+4         {                   DELIMITER      -                             
+5         return              KEYWORD        -                             
+5         0                   INTEGER        0                             
+5         ;                   DELIMITER      -                             
+6         }                   DELIMITER      -                             
