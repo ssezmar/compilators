@@ -1,6 +1,1 @@
-int main() {
-    if (1) {
-        x = 5;
-    // нет закрывающей }
-    return 0;
-}
+int main() { if (1 { x = 5; } return 0; }

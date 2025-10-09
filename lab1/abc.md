@@ -1,0 +1,112 @@
+# Результаты лексического анализа
+
+| Строка | Имя лексемы | Класс | Значение/Атрибут |
+|--------|-------------|-------|------------------|
+| 1 | `#` | ERROR | lexical_error |
+| 1 | `include` | IDENTIFIER | id_1_2 |
+| 1 | `<` | OPERATOR | - |
+| 1 | `iostream` | IDENTIFIER | id_1_11 |
+| 1 | `>` | OPERATOR | - |
+| 2 | `using` | IDENTIFIER | id_2_1 |
+| 2 | `namespace` | IDENTIFIER | id_2_7 |
+| 2 | `std` | IDENTIFIER | id_2_17 |
+| 2 | `;` | DELIMITER | - |
+| 4 | `int` | KEYWORD | - |
+| 4 | `main` | IDENTIFIER | id_4_5 |
+| 4 | `(` | DELIMITER | - |
+| 4 | `)` | DELIMITER | - |
+| 4 | `{` | DELIMITER | - |
+| 5 | `// Это однострочный комментарий` | COMMENT | comment |
+| 6 | `int` | KEYWORD | - |
+| 6 | `x` | IDENTIFIER | id_6_9 |
+| 6 | `=` | OPERATOR | - |
+| 6 | `42` | INTEGER | 42 |
+| 6 | `;` | DELIMITER | - |
+| 7 | `float` | KEYWORD | - |
+| 7 | `pi` | IDENTIFIER | id_7_11 |
+| 7 | `=` | OPERATOR | - |
+| 7 | `3.14159` | FLOAT | 3.14159 |
+| 7 | `;` | DELIMITER | - |
+| 8 | `string` | IDENTIFIER | id_8_5 |
+| 8 | `message` | IDENTIFIER | id_8_12 |
+| 8 | `=` | OPERATOR | - |
+| 8 | `"Hello, World!"` | STRING | str_literal |
+| 8 | `;` | DELIMITER | - |
+| 11 | `/* Это многострочный
+       комментарий */` | COMMENT | comment |
+| 13 | `if` | KEYWORD | - |
+| 13 | `(` | DELIMITER | - |
+| 13 | `x` | IDENTIFIER | id_13_9 |
+| 13 | `>` | OPERATOR | - |
+| 13 | `0` | INTEGER | 0 |
+| 13 | `)` | DELIMITER | - |
+| 13 | `{` | DELIMITER | - |
+| 14 | `cout` | IDENTIFIER | id_14_9 |
+| 14 | `<<` | OPERATOR | - |
+| 14 | `message` | IDENTIFIER | id_14_17 |
+| 14 | `<<` | OPERATOR | - |
+| 14 | `endl` | IDENTIFIER | id_14_28 |
+| 14 | `;` | DELIMITER | - |
+| 15 | `x` | IDENTIFIER | id_15_9 |
+| 15 | `++` | OPERATOR | - |
+| 15 | `;` | DELIMITER | - |
+| 16 | `pi` | IDENTIFIER | id_16_9 |
+| 16 | `-=` | OPERATOR | - |
+| 16 | `1.5e-3` | FLOAT | 1.5e-3 |
+| 16 | `;` | DELIMITER | - |
+| 17 | `}` | DELIMITER | - |
+| 19 | `for` | KEYWORD | - |
+| 19 | `(` | DELIMITER | - |
+| 19 | `int` | KEYWORD | - |
+| 19 | `i` | IDENTIFIER | id_19_14 |
+| 19 | `=` | OPERATOR | - |
+| 19 | `0` | INTEGER | 0 |
+| 19 | `;` | DELIMITER | - |
+| 19 | `i` | IDENTIFIER | id_19_21 |
+| 19 | `<` | OPERATOR | - |
+| 19 | `10` | INTEGER | 10 |
+| 19 | `;` | DELIMITER | - |
+| 19 | `++` | OPERATOR | - |
+| 19 | `i` | IDENTIFIER | id_19_31 |
+| 19 | `)` | DELIMITER | - |
+| 19 | `{` | DELIMITER | - |
+| 20 | `x` | IDENTIFIER | id_20_9 |
+| 20 | `*=` | OPERATOR | - |
+| 20 | `2` | INTEGER | 2 |
+| 20 | `;` | DELIMITER | - |
+| 21 | `}` | DELIMITER | - |
+| 23 | `return` | KEYWORD | - |
+| 23 | `0` | INTEGER | 0 |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `;` | DELIMITER | - |
+| 23 | `rfghjk` | IDENTIFIER | id_23_21 |
+| 24 | `}` | DELIMITER | - |
+
+## Статистика
+
+| Тип токена | Количество |
+|------------|------------|
+| STRING | 1 |
+| FLOAT | 2 |
+| INTEGER | 6 |
+| COMMENT | 2 |
+| KEYWORD | 7 |
+| OPERATOR | 14 |
+| DELIMITER | 30 |
+| IDENTIFIER | 21 |
+| ERROR | 1 |
+
+---
+**Использованные методы:**
+- Расширяемый конечный автомат (9 баллов)
+- Хеширование для ключевых слов (5 баллов)
+- Бинарный поиск для операторов (5 баллов)
+- Обработка комментариев (+2 балла)
+
+**Итого: 21 балл**

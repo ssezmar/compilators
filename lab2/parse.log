@@ -1,0 +1,150 @@
+=== SYNTAX ANALYSIS LOG ===
+Start time: 2025-10-09 16:06:39
+============================
+
+Token: [1:1] KEYWORD "void"
+ENTER Program at [1:1] KEYWORD "void"
+  ENTER DeclarationList at [1:1] KEYWORD "void"
+    ENTER Declaration at [1:1] KEYWORD "void"
+Token: [1:6] IDENTIFIER "test"
+Token: [1:10] DELIMITER "("
+Token: [1:11] DELIMITER ")"
+Token: [1:13] DELIMITER "{"
+      ENTER CompoundStatement at [1:13] DELIMITER "{"
+Token: [1:15] KEYWORD "int"
+        ENTER StatementList at [1:15] KEYWORD "int"
+          ENTER Statement at [1:15] KEYWORD "int"
+            ENTER VarDeclaration at [1:15] KEYWORD "int"
+              ENTER Type at [1:15] KEYWORD "int"
+Token: [1:19] IDENTIFIER "a"
+              EXIT Type - SUCCESS
+Token: [1:21] OPERATOR "="
+Token: [1:23] INTEGER "5"
+              ENTER Expression at [1:23] INTEGER "5"
+                ENTER LogicalOrExpression at [1:23] INTEGER "5"
+                  ENTER LogicalAndExpression at [1:23] INTEGER "5"
+                    ENTER EqualityExpression at [1:23] INTEGER "5"
+                      ENTER RelationalExpression at [1:23] INTEGER "5"
+                        ENTER AdditiveExpression at [1:23] INTEGER "5"
+                          ENTER MultiplicativeExpression at [1:23] INTEGER "5"
+                            ENTER UnaryExpression at [1:23] INTEGER "5"
+                              ENTER PrimaryExpression at [1:23] INTEGER "5"
+Token: [1:24] DELIMITER ";"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [1:26] KEYWORD "int"
+            EXIT VarDeclaration - SUCCESS
+          EXIT Statement - SUCCESS
+          ENTER Statement at [1:26] KEYWORD "int"
+            ENTER VarDeclaration at [1:26] KEYWORD "int"
+              ENTER Type at [1:26] KEYWORD "int"
+Token: [1:30] IDENTIFIER "b"
+              EXIT Type - SUCCESS
+Token: [1:32] OPERATOR "="
+Token: [1:34] INTEGER "10"
+              ENTER Expression at [1:34] INTEGER "10"
+                ENTER LogicalOrExpression at [1:34] INTEGER "10"
+                  ENTER LogicalAndExpression at [1:34] INTEGER "10"
+                    ENTER EqualityExpression at [1:34] INTEGER "10"
+                      ENTER RelationalExpression at [1:34] INTEGER "10"
+                        ENTER AdditiveExpression at [1:34] INTEGER "10"
+                          ENTER MultiplicativeExpression at [1:34] INTEGER "10"
+                            ENTER UnaryExpression at [1:34] INTEGER "10"
+                              ENTER PrimaryExpression at [1:34] INTEGER "10"
+Token: [1:36] DELIMITER ";"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [1:38] KEYWORD "int"
+            EXIT VarDeclaration - SUCCESS
+          EXIT Statement - SUCCESS
+          ENTER Statement at [1:38] KEYWORD "int"
+            ENTER VarDeclaration at [1:38] KEYWORD "int"
+              ENTER Type at [1:38] KEYWORD "int"
+Token: [1:42] IDENTIFIER "sum"
+              EXIT Type - SUCCESS
+Token: [1:46] OPERATOR "="
+Token: [1:48] IDENTIFIER "a"
+              ENTER Expression at [1:48] IDENTIFIER "a"
+                ENTER LogicalOrExpression at [1:48] IDENTIFIER "a"
+                  ENTER LogicalAndExpression at [1:48] IDENTIFIER "a"
+                    ENTER EqualityExpression at [1:48] IDENTIFIER "a"
+                      ENTER RelationalExpression at [1:48] IDENTIFIER "a"
+                        ENTER AdditiveExpression at [1:48] IDENTIFIER "a"
+                          ENTER MultiplicativeExpression at [1:48] IDENTIFIER "a"
+                            ENTER UnaryExpression at [1:48] IDENTIFIER "a"
+                              ENTER PrimaryExpression at [1:48] IDENTIFIER "a"
+Token: [1:50] OPERATOR "+"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+Token: [1:52] IDENTIFIER "b"
+                          ENTER MultiplicativeExpression at [1:52] IDENTIFIER "b"
+                            ENTER UnaryExpression at [1:52] IDENTIFIER "b"
+                              ENTER PrimaryExpression at [1:52] IDENTIFIER "b"
+Token: [1:53] DELIMITER ";"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [3:5] KEYWORD "int"
+            EXIT VarDeclaration - SUCCESS
+          EXIT Statement - SUCCESS
+          ENTER Statement at [3:5] KEYWORD "int"
+            ENTER VarDeclaration at [3:5] KEYWORD "int"
+              ENTER Type at [3:5] KEYWORD "int"
+Token: [3:9] IDENTIFIER "asdf"
+              EXIT Type - SUCCESS
+Token: [3:14] OPERATOR "="
+Token: [3:16] INTEGER "10"
+              ENTER Expression at [3:16] INTEGER "10"
+                ENTER LogicalOrExpression at [3:16] INTEGER "10"
+                  ENTER LogicalAndExpression at [3:16] INTEGER "10"
+                    ENTER EqualityExpression at [3:16] INTEGER "10"
+                      ENTER RelationalExpression at [3:16] INTEGER "10"
+                        ENTER AdditiveExpression at [3:16] INTEGER "10"
+                          ENTER MultiplicativeExpression at [3:16] INTEGER "10"
+                            ENTER UnaryExpression at [3:16] INTEGER "10"
+                              ENTER PrimaryExpression at [3:16] INTEGER "10"
+Token: [3:18] DELIMITER ";"
+                              EXIT PrimaryExpression - SUCCESS
+                            EXIT UnaryExpression - SUCCESS
+                          EXIT MultiplicativeExpression - SUCCESS
+                        EXIT AdditiveExpression - SUCCESS
+                      EXIT RelationalExpression - SUCCESS
+                    EXIT EqualityExpression - SUCCESS
+                  EXIT LogicalAndExpression - SUCCESS
+                EXIT LogicalOrExpression - SUCCESS
+              EXIT Expression - SUCCESS
+Token: [4:1] DELIMITER "}"
+            EXIT VarDeclaration - SUCCESS
+          EXIT Statement - SUCCESS
+        EXIT StatementList - SUCCESS
+Token: [5:1] EOF ""
+      EXIT CompoundStatement - SUCCESS
+    EXIT Declaration - SUCCESS
+  EXIT DeclarationList - SUCCESS
+EXIT Program - SUCCESS
+
+=== PARSING COMPLETED ===
+Total nodes created: 25
+Errors encountered: 0
+Parse time: 0.084 ms
