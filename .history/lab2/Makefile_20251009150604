@@ -1,0 +1,20 @@
+
+CXX = g++
+CXXFLAGS = -std=c++11 -Wall -O2
+
+SRC = lexer.cpp parser.cpp main.cpp
+OBJ = $(SRC:.cpp=.o)
+TARGET = syntax
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $<
+
+clean:
+	rm -f $(OBJ) $(TARGET)
+
+.PHONY: all clean

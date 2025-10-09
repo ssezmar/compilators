@@ -1,0 +1,21 @@
+CXX = g++
+CXXFLAGS = -std=c++11 -Wall -Wextra -O2
+
+SOURCES = lexical_analyzer.cpp parser.cpp main.cpp
+OBJECTS = $(SOURCES:.cpp=.o)
+TARGET  = syntax
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJECTS)
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $<
+
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+
+test: $(TARGET)
+	./syntax tests/positive1.cpp
+	./syntax tests/negative1.cpp || echo "Error detected"
