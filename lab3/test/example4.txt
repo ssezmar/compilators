@@ -1,0 +1,11 @@
+// Example 4: Complex Program - Factorial Calculation
+int factorial = 1;
+int n = 5;
+int counter = 1;
+
+while (counter <= n) {
+    factorial = factorial * counter;
+    counter = counter + 1;
+}
+
+print(factorial);  // Should output 120

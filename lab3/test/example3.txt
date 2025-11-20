@@ -1,0 +1,8 @@
+// Example 3: For Loop and Constant Folding
+int result = 0;
+
+for (int i = 0; i < 3; i = i + 1) {
+    result = result + (2 * 3);  // Will be optimized to 6
+}
+
+print(result);

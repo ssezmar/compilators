@@ -1,0 +1,4 @@
+// Error Test 1: Type Mismatch
+int a = 10;
+a = true;  // Type error: assigning bool to int
+print(a);

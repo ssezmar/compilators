@@ -1,0 +1,3 @@
+// Error Test 2: Undefined Variable
+int a = 10;
+print(b);  // Error: variable 'b' is not defined

@@ -1,0 +1,5 @@
+// Example 1: Simple Arithmetic and Print
+int a = 10;
+int b = 20;
+int c = a + b;
+print(c);
